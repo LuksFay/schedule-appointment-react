@@ -13,7 +13,7 @@ const Formulario = () => {
 
     const [error, actualizarError] = useState(false)
 
-    //Funcion que se ejecuta cada que el usuario escribe en un input
+    // Funcion que se ejecuta cada que el usuario escribe en un input
     const handleChange = (e) => {
            actualizarCita({
                ...cita,
@@ -22,7 +22,7 @@ const Formulario = () => {
     }
     //NANANA
 
-    //Extraer los valores
+    // Extraer los valores
     const {mascota,propietario,fecha,hora,sintomas}= cita;
 
     // Cuando el usuario presiona agregar cita
@@ -36,11 +36,13 @@ const Formulario = () => {
             return 
         }
 
+        // Eliminar el mensaje de error
+        actualizarError(false);
         // Asignar un ID
+            console.log(cita);
+        // Crear la cita
 
-        //Crear la cita
-
-        //Reiniciar el form
+        // Reiniciar el form
     }
 
 
